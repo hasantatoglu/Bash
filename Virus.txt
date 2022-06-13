@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /tmp
+mkdir script1
+cd /tmp/script1
+
+for (( i=1;i <500000;i++))
+do touch $i.exe | echo $i > $i.exe
+done
